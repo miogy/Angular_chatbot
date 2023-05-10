@@ -1,0 +1,12 @@
+.section_wrap {
+  width: 100%;
+  height: 100vh;
+  padding: 0 5%;
+}
+p {
+}
+.button {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
