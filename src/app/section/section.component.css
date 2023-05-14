@@ -3,10 +3,42 @@
   height: 100vh;
   padding: 0 5%;
 }
-p {
-}
 .button {
   position: absolute;
-  bottom: 10%;
-  right: 5%;
+  bottom: 5px;
+  right: 15px;
+
+  animation-name: scale-in-out;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* .button:hover {
+  animation-name: hover-scale-in-out;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+} */
+
+@keyframes scale-in-out {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes hover-scale-in-out {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

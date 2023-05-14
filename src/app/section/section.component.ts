@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SectionComponent implements OnInit {
   title = 'Angular Chatbot';
   modalStatus = false;
+  buttonStatus = true;
 
   constructor() {}
 
@@ -15,6 +16,7 @@ export class SectionComponent implements OnInit {
 
   toggleModal() {
     this.modalStatus = !this.modalStatus;
+    this.buttonStatus = !this.buttonStatus;
     if (this.modalStatus) {
       document.body.classList.add('show');
     } else {
@@ -24,6 +26,7 @@ export class SectionComponent implements OnInit {
 
   closeModal() {
     this.modalStatus = false;
+    this.buttonStatus = true;
     document.body.classList.remove('show');
   }
 }

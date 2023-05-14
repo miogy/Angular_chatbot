@@ -1,22 +1,36 @@
-<div class="modal">
+<div class="modal" *ngIf="showModal">
   <div class="modalWrap">
     <div class="modalContainer">
       <div class="top">
+        <div class="logo">
+          <img
+            src="https://cdn.logo.com/hotlink-ok/logo-social.png"
+            alt="logo"
+          />
+        </div>
+        <h2>웨인힐스</h2>
+        <button class="settingBtn" (click)="settingToggle()">
+          <mat-icon class="settingBtnIcon">settings</mat-icon>
+        </button>
         <button class="closeBtn" (click)="closeModal()">
           <mat-icon class="closeIcon">close</mat-icon>
         </button>
       </div>
       <div class="center">
-        <div class="modalView">
-          <p class="textBox">무엇을 도와드릴까요?</p>
-        </div>
-      </div>
-      <div class="bottom">
-        <input type="text" placeholder="문의 내용을 입력하세요." />
-        <button type="button" class="sendBtn">
-          <mat-icon class="sendIcon">send</mat-icon>
-        </button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <app-card
+          *ngFor="let card of cards; let i = index"
+          [title]="card.title"
+          [description]="card.description"
+          [imageUrl]="card.imageUrl"
+          [name]="card.name"
+        ></app-card>
       </div>
     </div>
+    <app-setting
+      class="modalContainer"
+      *ngIf="showSetting"
+      (close)="settingToggle()"
+    ></app-setting>
   </div>
 </div>

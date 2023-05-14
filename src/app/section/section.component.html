@@ -1,7 +1,11 @@
 <div class="section_wrap">
   <p class="section_wrap">{{ title }}과제입니다.</p>
   <div class="button">
-    <app-button class="ui button" (click)="toggleModal()"></app-button>
+    <app-button
+      *ngIf="buttonStatus"
+      class="ui button"
+      (click)="toggleModal()"
+    ></app-button>
   </div>
   <app-modal *ngIf="modalStatus" (close)="toggleModal()"></app-modal>
 </div>
