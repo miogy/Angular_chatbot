@@ -1,8 +1,89 @@
-<div class="top">
-  <button class="prevBtn" (click)="closeSetting()">
-    <mat-icon class="prevIcon">arrow_back_ios</mat-icon>
-  </button>
-  <button class="closeBtn" (click)="closeModal()">
-    <mat-icon class="closeIcon">close</mat-icon>
-  </button>
+<div class="settingContainer">
+  <div class="top">
+    <button class="prevBtn" (click)="closeSetting()">
+      <mat-icon class="prevIcon">arrow_back_ios</mat-icon>
+    </button>
+    <h2>설정 및 정보</h2>
+    <button class="closeBtn" (click)="closeModal()">
+      <mat-icon class="closeIcon">close</mat-icon>
+    </button>
+  </div>
+  <div class="contents">
+    <div class="company">
+      <dl>
+        <dt>
+          <img src="" alt="logo" />
+        </dt>
+        <dd>
+          <p>웨인힐스</p>
+          <p>https://111.000.com</p>
+        </dd>
+      </dl>
+    </div>
+    <div class="setting">
+      <h3>상담 환경</h3>
+      <div class="lang">
+        <p>
+          <mat-icon class="icon">language</mat-icon>
+          <span>언어</span>
+        </p>
+        <p>
+          <span>한국어</span>
+          <mat-icon class="icon">expand_more</mat-icon>
+        </p>
+        <ul>
+          <li>한국어</li>
+          <li>영어</li>
+          <li>일본어</li>
+        </ul>
+      </div>
+      <div class="lang_view">
+        <p>
+          <mat-icon class="icon">g_translate</mat-icon>
+          <span>메세지 번역 표시</span>
+        </p>
+        <div class="toggle">
+          <app-toggle></app-toggle>
+        </div>
+      </div>
+      <div class="alarm">
+        <p>
+          <mat-icon class="icon">notifications</mat-icon>
+          <span>알림음</span>
+        </p>
+        <div class="toggle">
+          <app-toggle></app-toggle>
+        </div>
+      </div>
+    </div>
+    <div class="marketing">
+      <h3>광고 수신 설정</h3>
+      <div class="message">
+        <p>문자 수신거부</p>
+        <div class="toggle">
+          <app-toggle></app-toggle>
+        </div>
+      </div>
+      <div class="email">
+        <p>이메일 수신거부</p>
+        <div class="toggle">
+          <app-toggle></app-toggle>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <dl>
+        <dt>내 연락처 정보 <span>수정</span></dt>
+        <dd>아래 연락처로 답변 알림을 받을 수 있어요.</dd>
+      </dl>
+      <dl>
+        <dt>이름</dt>
+        <dd>내용 없음</dd>
+      </dl>
+      <dl>
+        <dt>휴대폰 번호</dt>
+        <dd>내용 없음</dd>
+      </dl>
+    </div>
+  </div>
 </div>

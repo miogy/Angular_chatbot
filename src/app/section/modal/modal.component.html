@@ -18,17 +18,11 @@
       </div>
       <div class="center">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <app-card
-          *ngFor="let card of cards; let i = index"
-          [title]="card.title"
-          [description]="card.description"
-          [imageUrl]="card.imageUrl"
-          [name]="card.name"
-        ></app-card>
+        <app-card></app-card>
       </div>
     </div>
     <app-setting
-      class="modalContainer"
+      class="settingModal"
       *ngIf="showSetting"
       (close)="settingToggle()"
     ></app-setting>

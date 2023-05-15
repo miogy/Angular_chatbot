@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ModalComponent } from './section/modal/modal.component';
 import { CardComponent } from './section/modal/card/card.component';
 import { SettingComponent } from './section/modal/setting/setting.component';
+import { ToggleComponent } from './section/modal/toggle/toggle.component';
 
 // tag를 만들어서 사용설정
 @NgModule({
@@ -19,6 +20,7 @@ import { SettingComponent } from './section/modal/setting/setting.component';
     ModalComponent,
     CardComponent,
     SettingComponent,
+    ToggleComponent,
   ],
   imports: [
     BrowserModule,

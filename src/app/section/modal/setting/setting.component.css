@@ -1,0 +1,90 @@
+.settingContainer {
+  width: 100%;
+}
+.top {
+  padding: 0 5%;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top h2 {
+  width: 80%;
+  margin: 0;
+  font-size: 16px;
+  color: #222;
+}
+.top button {
+  width: 10%;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+.prevIcon,
+.closeIcon {
+  font-size: 20px;
+  color: #666;
+}
+.contents {
+  width: 90%;
+  height: 100%;
+  padding: 0 5%;
+  background-color: #fff;
+}
+.company {
+  width: 100%;
+  padding-top: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.company dl {
+  margin: 0;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.company dl > dt > img {
+  width: 50px;
+  height: 50px;
+}
+.company dl > dd p {
+  margin: 0;
+  font-size: 14px;
+  color: #999;
+}
+.company dl > dd p:first-child {
+  font-size: 18px;
+  line-height: 26px;
+  color: #222;
+}
+.setting {
+  width: 100%;
+}
+h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+}
+.lang p,
+.lang_view p,
+.alarm p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+  color: #222;
+}
+.lang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lang ul {
+  display: none;
+}
+.icon {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #999;
+}

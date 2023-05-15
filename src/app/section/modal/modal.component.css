@@ -17,11 +17,22 @@
   bottom: 25px;
   right: 25px;
   width: 370px;
-  height: 70%;
+  height: 60%;
   background-color: #f7f7f8;
   border-radius: 30px;
   transform-origin: bottom right;
-  animation: modalScale 0.5s forwards;
+  animation: modalScale 0.6s forwards;
+  box-shadow: 2px 2px 26px rgba(0, 0, 0, 0.2);
+}
+.settingModal {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 370px;
+  height: 60%;
+  background-color: #f7f7f8;
+  border-radius: 30px;
+  animation: opacity 0.3s ease;
   box-shadow: 2px 2px 26px rgba(0, 0, 0, 0.2);
 }
 .top {
@@ -73,6 +84,7 @@ h2 {
   margin: 0;
   margin-bottom: 10px;
   color: #666;
+  animation: slideIn 0.6s ease-out;
 }
 .bottom {
   width: 100%;
@@ -120,12 +132,38 @@ button {
     transform: scale(0);
     opacity: 0;
   }
-  60% {
-    transform: scale(1.01);
+  /* 60% {
+    transform: scale();
     opacity: 1;
-  }
+  } */
   100% {
     transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    height: 0;
+  }
+  50% {
+    opacity: 0;
+    /* transform: translateY(30px); */
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    height: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
     opacity: 1;
   }
 }
