@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-toggle',
@@ -6,11 +6,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./toggle.component.css'],
 })
 export class ToggleComponent {
-  @Output() setLocked = new EventEmitter<boolean>();
-  active = false;
+  @Input() type: string = '';
+  @Input() active = false;
+  @Output() toggleChange = new EventEmitter<{
+    type: string;
+    active: boolean;
+  }>();
 
   toggleLocked() {
-    this.active = !this.active;
-    this.setLocked.emit(this.active);
+    this.active = !this.active; // 상태 반전
+    this.toggleChange.emit({ type: this.type, active: this.active });
   }
 }

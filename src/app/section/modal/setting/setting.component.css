@@ -29,12 +29,15 @@
   width: 90%;
   height: 100%;
   padding: 0 5%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-bottom: 100px;
   background-color: #fff;
 }
 .company {
   width: 100%;
   padding-top: 10px;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 .company dl {
   margin: 0;
@@ -65,19 +68,37 @@ h3 {
   font-weight: 400;
   color: #999;
 }
-.lang p,
-.lang_view p,
-.alarm p {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 16px;
-  color: #222;
-}
-.lang {
+.lang_view,
+.alarm,
+.message,
+.email {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
+}
+.lang p,
+.lang_view p,
+.alarm p,
+.message p,
+.email p {
+  padding-top: 6px;
+  margin: 0;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  color: #222;
+}
+.flex_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.border_bottom {
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 .lang ul {
   display: none;
@@ -87,4 +108,44 @@ h3 {
   font-size: 16px;
   font-weight: 300;
   color: #999;
+}
+.info dl dt {
+  display: flex;
+  justify-content: space-between;
+}
+.info dl dt h3,
+.info dl dt span {
+  margin: 0;
+  font-size: 14px;
+}
+.info dl dd {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.info_box {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.info_box dt {
+  margin-right: 14px;
+}
+
+.info_box dt,
+.info_box dd,
+.info_box dt h3,
+.info_box dd h3 {
+  margin: 0;
+  margin-right: 10px;
+}
+dl,
+.info_box {
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.margin {
+  padding-top: 10px;
 }

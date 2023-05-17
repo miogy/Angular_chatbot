@@ -17,7 +17,7 @@
   bottom: 25px;
   right: 25px;
   width: 370px;
-  height: 60%;
+  padding-bottom: 320px;
   background-color: #f7f7f8;
   border-radius: 30px;
   transform-origin: bottom right;
@@ -29,7 +29,6 @@
   bottom: 25px;
   right: 25px;
   width: 370px;
-  height: 60%;
   background-color: #f7f7f8;
   border-radius: 30px;
   animation: opacity 0.3s ease;

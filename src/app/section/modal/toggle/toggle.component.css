@@ -1,8 +1,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 50px;
+  height: 30px;
 }
 
 .switch input {
@@ -11,40 +11,40 @@
   height: 0;
 }
 
-.slider {
+.switch .slider {
   position: absolute;
   cursor: pointer;
   top: 2px;
   left: 6px;
   right: 2px;
   bottom: 2px;
-  background-color: #ccc;
+  background-color: rgba(0, 0, 0, 0.08);
   transition: 0.4s;
 }
 
-.slider:before {
+.switch .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 22px;
+  width: 22px;
   left: 2px;
   bottom: 2px;
   background-color: white;
   transition: 0.4s;
 }
 
-input:checked.active + .slider {
-  background-color: #f00; /* palette.main.vivid 대신 사용자 정의 색상으로 변경 */
+.switch input:checked + .slider {
+  background-color: orange;
 }
 
-input:checked + .slider:before {
-  transform: translateX(22px);
+.switch input:checked + .slider:before {
+  transform: translateX(16px);
 }
 
-.slider.round {
+.switch .slider.round {
   border-radius: 34px;
 }
 
-.slider.round:before {
+.switch .slider.round:before {
   border-radius: 50%;
 }
